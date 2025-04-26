@@ -32,7 +32,7 @@ export default function NewsletterForm() {
     },
   })
 
-  const onSubmit = async (values) => {
+  const onSubmit = async (values: {[key:string]: string}) => {
     try {
       const res = await fetch('/api/newsletter-form', {
         method: 'POST',

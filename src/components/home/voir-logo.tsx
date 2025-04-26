@@ -11,10 +11,11 @@ const VoirLogo = () => {
       <div id='upper-text' className={`absolute flex flex-col font-bold ${complementary.className}
       2xl:top-1/12 2xl:left-1/12 2xl:text-2xl 2xl:text-left
       xl:top-1/12 xl:left-1/12 xl:text-2xl xl:text-left
-      lg:top-1/6 text-center lg:text-2xl
-      md:text-lg md:bottom-0 
-      sm:text-md sm:bottom-0
-      text-lg bottom-1/12`}>
+      lg:top-1/6 text-center lg:text-2xl lg:left-auto
+      md:text-lg md:top-0 
+      sm:text-md sm:top-0 
+      top-8 left-1 gap-3 flex-row
+      text-xs`}>
         <span>Earth-Sun</span>
         <span>149,597,870,700 metters</span>
       </div>
@@ -23,11 +24,11 @@ const VoirLogo = () => {
       xl:bottom-1/12 xl:right-1/12 xl:text-right xl:text-4xl xl:px-0
       bottom-1/6 lg:w-full lg:text-center lg:text-4xl
       md:text-center md:px-3 md:text-lg
-      sm:text-center sm:px-3 sm:text-md
-      text-4xl text-center px-3`}>
+      sm:text-center sm:px-3 sm:text-lg
+      text-lg text-center px-3`}>
         <span>The one way ahead is clearing - it&apos;s time to move forward &apos;&apos;</span>
       </div>
-      <h1 className="font-sans text-3xl font-bold text-white">COMING SOON</h1>
+      <h1 className={`font-sans text-xl font-bold text-white 2xl:text-3xl xl:text-3xl lg:text-3xl`}>COMING SOON</h1>
       <div className="flex justify-center gap-4 select-none relative z-10 mt-[-60px]">
         {"VOIR".split("").map((letter, index) => (
           <TitleLetter

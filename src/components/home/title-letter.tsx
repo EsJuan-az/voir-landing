@@ -1,7 +1,7 @@
 import { logo } from '@/fonts';
 import React from 'react';
 
-const TitleLetter = ({ letter, className, includeImage }) => {
+const TitleLetter = ({ letter, className, includeImage }: {letter: string, className: string, includeImage: boolean}) => {
   return (
     <h1
       className={`${className} ${logo.className}  text-white transition-colors bg-clip-text bg-cover bg-center

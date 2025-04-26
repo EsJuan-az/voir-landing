@@ -6,7 +6,6 @@ import VoirLogo from "@/components/home/voir-logo";
 import gsap from "gsap";
 import { useRef } from "react";
 import BackgroundTransition from "../components/home/background-transition";
-import { complementary } from "@/fonts";
 import NewsletterForm from "../components/home/newsletter-form";
 
 export default function Home() {

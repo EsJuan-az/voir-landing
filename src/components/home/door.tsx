@@ -1,6 +1,5 @@
 "use client";
 
-import { complementary, logo } from "@/fonts";
 import Image from "next/image";
 
 export default function Door() {

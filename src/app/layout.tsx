@@ -51,15 +51,19 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" translate="no" className="notranslate">
+      <head>
+        <meta name="google" content="notranslate" />
+        <meta name="googlebot" content="notranslate" />
+      </head>
       <body
+        translate="no"
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}

@@ -12,12 +12,15 @@ export default function Home() {
   const buttonRef = useRef(null);
   const containerRef = useRef(null);
   const handleClick = () => {
+    if (typeof window === 'undefined') return;
+    const delay = window.innerWidth < 1024 ? 1.5 : 0; // 1.5s delay for md/sm/xs
     const door = buttonRef.current as HTMLDivElement | null;
     const container = containerRef.current as HTMLDivElement | null;
 
     gsap.to(door, {
       opacity: 0,
       duration: 1,
+      delay: delay,
       onComplete: () => {
         if (!door || !container) return;
 
@@ -39,7 +42,7 @@ export default function Home() {
           { opacity: 0, x: 50 },
           { opacity: 1, x: 0, duration: 0.5, delay: 1.2 }
         );
-        gsap.to(bg, { opacity: 1, duration: 1, delay: 0.2 });
+        gsap.to(bg, { opacity: 1, duration: 1, delay: delay + 0.2 });
 
         if (scribbleWrapper) {
           gsap.to(scribbleWrapper, {

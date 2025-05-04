@@ -29,7 +29,7 @@ const VoirLogo = () => {
         <span>The one way ahead is clearing - it&apos;s time to move forward &apos;&apos;</span>
       </div>
       <h1 className={`font-sans text-xl font-bold text-white 2xl:text-3xl xl:text-3xl lg:text-3xl`}>COMING SOON</h1>
-      <div className="flex justify-center gap-1 select-none relative z-10 mt-[-60px]">
+      <div className="flex justify-center gap-5 select-none relative z-10 mt-[-60px]">
         {"VOIR".split("").map((letter, index) => (
           <TitleLetter
             includeImage={false}
